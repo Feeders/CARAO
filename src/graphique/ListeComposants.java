@@ -7,6 +7,8 @@ public class ListeComposants extends JPanel {
 	
 	public ListeComposants() {
 		
+		JPanel p = new JPanel(new GridBagLayout()); 
+		
 		//Couleur du pannel général
 		Color grisBleu = new Color (192,192,200);
 		setBackground(grisBleu);
@@ -14,27 +16,25 @@ public class ListeComposants extends JPanel {
 		/* Les différents boutons pour les composants*/
 		JButton machine = new JButton(new ImageIcon("image/machine.jpg" ));
 		machine.setMargin(new Insets(0, 0, 0, 0)); // Enlève la marge autour du bouton
-		add(machine);
+		p.add(machine);
 		
 		JButton cable = new JButton(new ImageIcon("image/cable.jpg" ));
 		cable.setMargin(new Insets(0, 0, 0, 0));
-		add(cable);
+		p.add(cable);
 		
 		JButton hub = new JButton(new ImageIcon("image/hub.jpg" ));
 		hub.setMargin(new Insets(0, 0, 0, 0));
-		add(hub);
+		p.add(hub);
 		
 		JButton partageur = new JButton(new ImageIcon("image/switch.png" ));
 		partageur.setMargin(new Insets(0, 0, 0, 0));
-		add(partageur);
+		p.add(partageur);
 		
 		JButton routeur = new JButton(new ImageIcon("image/routeur.jpg" ));
 		routeur.setMargin(new Insets(0, 0, 0, 0));
-		add(routeur);
+		p.add(routeur);
 		
-		JButton ping = new JButton("Simuler Un Ping");
-		ping.setMargin(new Insets(2,2,2,2));
-		add(ping);
+		add(p);
 		
 	}
 }
