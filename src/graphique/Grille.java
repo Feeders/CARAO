@@ -7,6 +7,6 @@ public class Grille extends JPanel {
 
 	public Grille () {
 		
-		setBackground(Color.BLACK);
+		setBackground(Color.WHITE);
 	}
 }
